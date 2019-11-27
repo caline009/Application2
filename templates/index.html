@@ -1,0 +1,31 @@
+
+ {% extends 'base.html' %}                 
+                  {% block content %}
+                  <div class="container">
+                        <h1>home page</h1>
+                        
+                        
+                        {% for  product in object_list %}
+                        <ul>
+                        <div class="card text-white bg-primary mb-2" style="max-width: 25rem; max-height: 40rem">
+                                <div class="card-header"><a href="#">{{product.name}}</a></div>
+                                <div class="card-body">
+                                  <h5 class="card-title">{{product.Description}}</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                              </div>
+                              </div>
+                              </ul>
+                        {% endfor %}
+                            
+                       
+                              
+                      
+                  {% endblock content %}
+                      
+        
+                
+
+
+            
+       
